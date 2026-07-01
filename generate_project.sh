@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Creating flutter project"
+flutter create live_transport
+
+cd my_app
+
+echo "Running IOS Simulator on iPhone 16 pro"
+open -a Simulator && xcrun simct boot "iPhone 16 Pro"
+
+echo "Installing flutter packages"
+flutter pub add flutter_dotenv
+flutter pub add webview_flutter
+
+echo "initializing git repo"
+git init .
