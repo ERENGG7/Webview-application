@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#installing flutter for macOS:
+brew update
+brew install --cask flutter
+
 echo "Creating flutter project"
 flutter create live_transport
 
