@@ -2,7 +2,7 @@
 
 
 while true; do
-    read "REPOSITORY_LINK?Enter link to git repository: "
+    read -r -p "Enter link to git repository: " REPOSITORY_LINK
 
     if [ -z "$REPOSITORY_LINK" ]; then
         echo "Error: The repository link cannot be empty."
