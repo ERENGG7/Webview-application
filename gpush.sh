@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 while true; do
     read "REPOSITORY_LINK?Enter link to git repository: "
 
