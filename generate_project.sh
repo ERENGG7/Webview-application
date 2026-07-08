@@ -15,7 +15,7 @@ if pgrep "$PROCESS_NAME" > /dev/null; then
     echo "Killing Process $PROCESS_NAME=..."
     killall "$PROCESS_NAME"
 else
-    echo "Process $PROCESS_NAMENot found. "
+    echo "Process $PROCESS_NAME not found. "
 fi
 echo "Running IOS Simulator on iPhone 16 pro"
 open -a Simulator && xcrun simct boot "iPhone 16 Pro"
